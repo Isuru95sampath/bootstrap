@@ -1,0 +1,42 @@
+
+:root{
+    --primary:#5af95a;
+    --secondary:#46a7f8;
+    --background:#e6e6e6;
+    --darc:#2d2d2d;
+    --black:#0000;
+}
+
+body{
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.nav-link {
+    color: white ;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--secondary);
+}
+
+.section-padding{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+img{
+    /*max-width: 100%;
+    height: auto;*/
+    
+}
+.btn-primary {
+    background-color: var(--primary);
+}
+ 
