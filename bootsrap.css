@@ -108,3 +108,65 @@ img{
 .icon-p h1{
     color: #979191;
 }
+
+
+
+/* Default state: Invisible before scrolling */
+
+
+
+.animated {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.4s ease-out, transform 0.8s ease-out;
+}
+
+/* When in view, add this class */
+.animated.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Different animations */
+
+.slide-right {
+    transform: translateX(50px);
+}
+
+
+/* Visible state for animations */
+
+.slide-right.visible {
+    transform: translateX(0);
+}
+
+
+
+
+/* Initial state - Hidden & moved */
+.slide-left, .slide-right {
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Image moves from left to right */
+.slide-left {
+    transform: translateX(-100px);
+}
+
+/* Text moves from right to left */
+.slide-right {
+    transform: translateX(100px);
+}
+
+/* When visible, apply animation */
+.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slide-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+

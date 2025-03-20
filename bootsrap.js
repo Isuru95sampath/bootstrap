@@ -1,8 +1,17 @@
-// Initialize AOS animations
 document.addEventListener("DOMContentLoaded", function () {
-    AOS.init({
-        duration: 1000, // Animation duration in milliseconds
-        once: true, // Animation occurs only once
-        easing: "ease-in-out", // Smooth transition
+    const animatedElements = document.querySelectorAll(".animated, .slide-left, .slide-right");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible"); // Add animation class
+            } else {
+                entry.target.classList.remove("visible"); // Remove animation class when scrolling back up
+            }
+        });
+    }, { threshold: 0.3 });
+
+    animatedElements.forEach(element => {
+        observer.observe(element);
     });
 });
