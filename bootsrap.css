@@ -83,4 +83,28 @@ img{
 /*about section*/
 .paddin-section{
     margin: 120px;
+    margin-top: 220px;
+
+}
+.about-p{
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 250px !important;
+}
+
+/*icons*/
+
+.sideimage{
+    width: 75%;
+    height: 75%;
+    border-radius: 18px;
+}
+.iconbox{
+    color: #c148df;
+    font-size: 60px;
+
+}
+
+.icon-p h1{
+    color: #979191;
 }
