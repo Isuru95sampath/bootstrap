@@ -1,6 +1,6 @@
 
 :root{
-    --primary:#5af95a;
+    --primary:#c148df;
     --secondary:#46a7f8;
     --background:#e6e6e6;
     --darc:#2d2d2d;
@@ -11,6 +11,7 @@ body{
     font-size: 16px;
     line-height: 1.6;
 }
+/*navbar */
 
 .nav-link {
     color: white ;
@@ -26,6 +27,7 @@ a:hover{
     color: var(--secondary);
 }
 
+
 .section-padding{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -36,7 +38,49 @@ img{
     height: auto;*/
     
 }
-.btn-primary {
-    background-color: var(--primary);
-}
+
  
+.bg-dark{
+    background-color: var(--black);
+}
+
+/*button styles*/
+
+.btn{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+}
+.btn-primary:hover{
+    background-color: rgb(65, 81, 226) !important;
+}
+
+.btn-light{
+    color: rgb(90, 82, 73);
+}
+
+
+/*bg image*/
+
+#hero{
+    background: url(image/home/Sunrise\ over\ one\ of\ Saturns\ moons.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -60px;
+}
+
+/*bg text h1*/
+
+.herotext{
+    font-size: 90px;
+    font-weight: 600;
+}
+
+/*about section*/
+.paddin-section{
+    margin: 120px;
+}
